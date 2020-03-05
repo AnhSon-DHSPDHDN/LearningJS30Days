@@ -1,0 +1,56 @@
+html{
+    background:#018DED url(https://d25tv1xepz39hi.cloudfront.net/2016-08-29/files/underwater-photo_1334.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    margin: 0;
+    font-size: 200rem;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-height: 100vh;
+}
+.clock{
+    width: 300px;
+    height: 300px;
+    border: 20px solid whitesmoke;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+}
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  .sec-hand{
+      background: crimson;
+      height: 3px;
+  }
+  .min-hand{
+      background: chartreuse;
+      
+      height: 5px;
+      
+  }
